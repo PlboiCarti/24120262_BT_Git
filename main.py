@@ -1,3 +1,4 @@
+
 def isPrime(n):
     if n <= 1:
         return False
@@ -22,3 +23,19 @@ if isPrime(num_to_check):
     print(f"{num_to_check} is a prime number.")
 else:
     print(f"{num_to_check} is not a prime number.")
+
+print("Hello Github")
+
+# 2. Hàm thống kê dãy số nguyên tố
+def analyze_primes(numbers):
+    """Thống kê số lượng, tổng và danh sách các số nguyên tố"""
+    prime_list = [num for num in numbers if isPrime(num)]
+    count = len(prime_list)
+    total = sum(prime_list)
+    
+    return {
+        "prime_numbers": prime_list,
+        "count": count,
+        "total": total
+    }
+
